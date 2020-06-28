@@ -1,0 +1,38 @@
+{% extends 'trades/base.html' %}
+{% load macros %}
+
+{% macro trade_view trade %}
+    <tr>
+      <th scope="row">{{ trade.id }}</th>
+      <td>{{ trade.position | title }}</td>
+      <td>{{ trade.exchange | title }}</td>
+      <td>{{ trade.market | upper }}</td>
+      <td>{{ trade.open_price | upper }}</td>
+      <td>{{ trade.amount | upper }}</td>
+    </tr>
+{% endmacro %}
+
+
+{% block content %}
+
+<table class="table table-striped col-10 mx-auto">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Position</th>
+      <th scope="col">Exchange</th>
+      <th scope="col">Market</th>
+      <th scope="col">Open Price</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% if trades_list %}
+        {% for trade in trades_list %}
+            {% use_macro trade_view trade %}
+        {% endfor %}
+    {% endif %}
+  </tbody>
+</table>
+
+{% endblock %}

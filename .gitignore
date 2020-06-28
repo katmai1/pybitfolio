@@ -1,4 +1,5 @@
 /pyfolio.egg-info/
 /.vscode/
-*/__pycache__/
+**/__pycache__/
 /__pycache__/
+**/migrations/
