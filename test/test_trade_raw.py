@@ -1,5 +1,5 @@
 import unittest
-from pyfolio.trade import TradeRaw
+from pybitfolio.trade import TradeRaw
 
 
 # ─── TRADERAW BASIC TEST ────────────────────────────────────────────────────────

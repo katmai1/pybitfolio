@@ -1,4 +1,4 @@
-from pyfolio.base import TradeBase
+from pybitfolio.base import TradeBase
 
 
 # ─── RAW CLASS ──────────────────────────────────────────────────────────────────
