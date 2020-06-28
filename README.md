@@ -4,6 +4,7 @@ Python cryptocurrencies portfolio lib
 
 ### Dependencies
 
+`pip install -r requirements`
 
 ## Development
 
